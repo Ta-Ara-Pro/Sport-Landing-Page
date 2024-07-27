@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 import { Link } from 'react-router-dom';
 import logo from '../../assets/logo.png'
 import './Navbar.css'
-import { set } from 'mongoose';
+// import { set } from 'mongoose';
 
 const Navbar = () => {
 
