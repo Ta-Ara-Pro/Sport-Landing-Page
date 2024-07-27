@@ -13,7 +13,7 @@ const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post('http://localhost:5000/api/contact', { name, email, message });
+      await axios.post('https://sport-landing-page-server.vercel.app/api/contact', { name, email, message });
       alert('Message sent successfully!');
       setName('');
       setEmail('');
