@@ -1,0 +1,198 @@
+.topic {
+    justify-items: center;
+    flex-direction: column;
+ align-items: center;
+ background-color: #e9e9ba;
+ margin-top: 125px;
+}
+
+.headerg {
+  width: 100%;
+  background-color: #e9e9ba;
+  justify-items: center;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  height: 100px;
+}
+.headerg h1{
+ 
+  justify-content: center;
+  align-items: center;
+  font-size: 45px;
+  font-weight: 700;
+  color: #821a11;
+  text-shadow: 2px 2px 4px rgba(52, 2, 2, 0.5);
+}
+/* .topic h1{
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    font-weight: 700;
+    color: #821a11;
+    padding-left: 50px;
+    padding-top: 30px;
+    margin-top: 100px;
+    text-shadow: 2px 2px 4px rgba(52, 2, 2, 0.5);
+
+} */
+.gallery {
+    margin-top: 30px;
+    margin-bottom: 100px;
+    overflow: hidden;
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    position: relative; /* Ensure the pseudo-element is positioned relative to this container */
+    box-shadow: 0px 4px 8px rgba(87, 32, 0, 0.2);
+  }
+  
+  .gallery::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: inherit; /* Inherit the background image from the parent */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.3; /* Adjust the opacity as needed */
+    pointer-events: none; /* Prevent interaction with the pseudo-element */
+  }
+  
+  .slider {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    z-index: 1; /* Ensure that slider content is on top of the background */
+    padding: 0px; /* Remove padding to avoid extra space around the image */
+  }
+  
+  .slide {
+    
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    width: 70%; /* Fixed width for the slide container */
+    height: 500px; /* Fixed height for the slide container */
+    overflow: hidden; /* Hide overflow content */
+  }
+  
+ 
+  
+  .slide img {
+    position: relative;
+    width: 100%; /* Make the image fill the width of the container */
+    height: 100%; /* Make the image fill the height of the container */
+    object-fit: contain; /* Maintain aspect ratio while fitting the image inside the container */
+  }
+  
+  .description {
+    background: rgba(55, 60, 2, 0.5); /* Semi-transparent background */
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    position: absolute; /* Position absolutely within the slide */
+    bottom: 0;
+     /* Stick to the bottom of the slide */
+    /* left: 0;  */
+    /* Align to the left edge of the slide */
+    width: 50%; /* Span the full width of the slide container */
+    display: flex;
+    align-items: center; /* Center text vertically */
+    justify-content: center; /* Center text horizontally */
+    box-sizing: border-box; /* Include padding in the height calculation */
+    text-align: center; /* Align text horizontally */
+    margin-left: 10%;
+    margin-bottom: 10px;
+  }
+  
+  .prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(88, 98, 2, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 24px;
+    z-index: 2; /* Ensure navigation buttons are above all content */
+  }
+  
+  .prev {
+    left: 10px;
+  }
+  
+  .next {
+    right: 10px;
+  }
+  
+
+
+
+  /* Responsive styles */
+@media (max-width: 768px) {
+  .topic {
+    margin-top: 50px;
+    padding: 20px;
+    margin-bottom: 50px;
+  }
+
+  .headerg {
+    width: 80%;
+    height: 80px;
+    padding: 8px;
+  justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 0px;
+    margin-top: 0px;
+  }
+
+  .headerg h1 {
+    padding-left: 40px;
+    font-size: 35px; /* Adjust font size for smaller screens */
+    justify-content: center;
+    display: flex;
+    text-align: center;
+    align-items: center;
+  }
+
+  .gallery {
+    margin-top: 0px;
+    margin-bottom: 50px;
+    padding: 0 10px; /* Add padding for better spacing */
+  }
+
+  .slider {
+    padding: 10px; /* Add padding */
+  }
+
+  .slide {
+    width: 90%; /* Adjust width */
+    height: auto; /* Adjust height */
+  }
+
+  .slide img {
+    height: 300px; /* Maintain aspect ratio */
+  }
+
+  .description {
+    width: 80%; /* Adjust width */
+    margin-left: 0; /* Remove margin */
+    margin-bottom: 10px; /* Adjust margin */
+  }
+
+  .prev, .next {
+    font-size: 18px; /* Adjust font size for smaller screens */
+    padding: 8px; /* Adjust padding */
+  }
+}

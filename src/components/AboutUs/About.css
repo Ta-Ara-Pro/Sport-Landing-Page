@@ -1,0 +1,119 @@
+.about {
+    width: 100%;
+    background-color: #e9e9ba;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 0 0; /* Adjust vertical padding */
+    margin-top: 60px; /* Reduced margin-top */
+    margin-bottom: 20px; /* Reduced margin-bottom */
+}
+
+.desc {
+    width: 50%;
+    padding-left: 30px;
+    margin: 0 20px; /* Adjust margin */
+}
+
+.desc h1 {
+    font-size: 25px;
+    font-weight: 700;
+    color: #232222;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Shadow: offsetX, offsetY, blur-radius, color */
+}
+
+.desc span {
+    font-family: 30px;
+    font-weight: 500;
+    display: block; /* Ensure the span takes the full width of its container */
+    width: 100%; /* Span takes up the full width of .desc */
+    line-height: 1.6; /* Optional: improves readability by spacing lines */
+    padding-left: 15px; /* Remove padding if unnecessary */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Shadow: offsetX, offsetY, blur-radius, color */
+}
+
+.ima {
+    width: 50%;
+    height: 50%;
+    display: flex; /* Ensure flex alignment for image */
+    justify-content: center; /* Center the image */
+    padding: 30px;
+}
+
+.ima img {
+    width: 50%; /* Ensure the image takes the full width of .ima */
+    height: 50%; /* Maintain aspect ratio */
+    padding: 0; /* Remove padding if unnecessary */
+    border: none;
+    border-radius: 5px;
+   
+}
+.but {
+    width: 30%;
+    height: auto;
+    background-color: #b7b762; /* No background color */
+    font-size: 18px;
+    font-weight: 400;
+    color: #232222;
+    border: 1px solid #232222;
+    border-radius: 5px;
+    padding: 10px 50px 10px; /* Increase padding-top to 20px */
+    margin: 40px;
+    /* Ensure the button fits content width */
+    text-align: center; /* Center text inside the button */
+    cursor: pointer; /* Change cursor to pointer */
+    transition: color 0.2s ease, box-shadow 0.2s ease; /* Smooth transition */
+    /* box-shadow: 0px 4px 8px rgba(87, 32, 0, 0.2);  */
+    /* Shadow: offsetX, offsetY, blur-radius, color */
+}
+.but:hover{
+    color:#b7b762;
+    background-color: #821a11; /* Change text color on hover */
+    box-shadow: 0px 6px 12px rgba(87, 32, 0, 0.4); /* Enhanced shadow on hover */
+}
+
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .about {
+      width: 80%;
+        display:flex;
+      flex-direction: column; /* Stack items vertically */
+      align-items: center; /* Center items horizontally */
+      text-align: center; /* Center text */
+      padding: 20px; /* Adjust padding */
+      margin-top: 30px; /* Adjust margin */
+      margin: 35px 35px;
+    }
+  
+    .desc {
+      width: 100%;
+      padding-left: 0; /* Remove left padding */
+      margin: 0 0 20px; /* Adjust margin */
+    }
+  
+    .desc h1 {
+      font-size: 22px; /* Adjust font size */
+    }
+  
+    .desc span {
+      font-size: 20px; /* Adjust font size */
+      padding-left: 0; /* Remove left padding */
+    }
+  
+    .ima {
+      width: 100%;
+      padding: 20px; /* Adjust padding */
+    }
+  
+    .ima img {
+      width: 100%; /* Adjust image width */
+    }
+  
+    .but {
+      width: auto; /* Adjust button width */
+      margin: 20px 0; /* Adjust margin */
+      padding: 15px 30px; /* Adjust padding */
+    }
+  }

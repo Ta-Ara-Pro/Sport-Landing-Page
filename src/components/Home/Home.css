@@ -1,0 +1,114 @@
+/* src/components/Home.css */
+.home {
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    background-image: url('../../assets/1.jpg'); /* Path to your image */
+    background-size: cover; /* Cover the entire container */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent tiling */
+    /* display: flex;  */
+    /* Optional: For centering content */
+    justify-content: center; /* Optional: Center horizontally */
+    align-items: center; /* Optional: Center vertically */
+    color: #332e2e; /* Optional: Text color for better readability */
+    flex-direction: column;
+    opacity: 0.9;
+
+  }
+  .matn {
+    display: column;
+    align-items: left;
+    justify-content:left;
+    width: 40%;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.225);
+    padding: 20px;
+    margin: 20px;
+    margin: 5rem;
+  }
+  .matn2 {
+    display: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    text-align: center;
+    margin-bottom: 2rem;
+    margin-top: 9rem;
+  
+  }
+  .header {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+
+    padding-left: 50px;
+
+  }
+  .p1 {
+    padding-top: 0px;
+  }
+  .p2 {
+    font-size: 35px;
+  }
+  .p3 {
+    width: 100%;
+    font-size: 3rem;
+    padding-left: 5%;
+    color: rgb(64, 21, 0);
+    margin-top: 100px;
+    padding-bottom: 55px;
+    text-shadow: 2px 2px 4px rgb(255, 209, 209);
+  }
+  .matn2 :hover{
+    transition: 0.6s;
+    transform: scale(1.2);
+    text-shadow: 4px 8px 8px rgb(255, 209, 209);
+  }
+
+
+
+  /* Responsive styles */
+@media (max-width: 768px) {
+  .home {
+    height: 500px; /* Adjust height for smaller screens */
+    background-size: cover; /* Adjust image size */
+    background-position: top; /* Adjust image position */
+    align-items: center; /* Center content vertically */
+  }
+
+  .matn {
+    width: 45%; /* Adjust width */
+    padding-left: 15px; /* Adjust padding */
+    margin-left: 10px; /* Adjust margin */
+    font-size: 11px;
+  }
+  .matn2 {
+   
+    width: 60%; /* Adjust width */
+    padding-left: 15px; /* Adjust padding */
+    margin-left: 10px; /* Adjust margin */
+  }
+
+
+  .header {
+    width: 90%; /* Adjust width */
+    padding-left: 20px; /* Adjust padding */
+  }
+
+  .p1 {
+    padding-top: 18px; /* Adjust padding */
+  }
+
+  .p2 {
+    font-size: 18px; /* Adjust font size */
+  }
+
+  .p3 {
+    font-size: 30px;
+    padding-left: 2%; /* Adjust padding */
+    color: rgb(64, 21, 0);
+    margin-top: -75px; /* Adjust margin */
+    padding-bottom: 10px; /* Adjust padding */
+  }
+}
