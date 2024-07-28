@@ -14,6 +14,7 @@ const Contact = () => {
     e.preventDefault();
     try {
       await axios.post('https://sport-landing-page-server.vercel.app/api/contact', { name, email, message });
+
       alert('Message sent successfully!');
       setName('');
       setEmail('');
