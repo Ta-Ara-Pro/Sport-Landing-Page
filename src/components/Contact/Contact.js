@@ -13,7 +13,7 @@ const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post('https://sport-landing-page-server.vercel.app/api/contact', { name, email, message });
+      await axios.post('https://sport-landing-page-server.vercel.app/', { name, email, message });
       alert('Message sent successfully!');
       setName('');
       setEmail('');
@@ -48,7 +48,7 @@ const Contact = () => {
               <label className='la'>Your Name</label>
               <input type='text' placeholder='Enter Your Name'  name='name'  value={name} onChange={(e) => setName(e.target.value)} required/>
               <label className='la'>Your Email</label>
-              <input type='email' placeholder='Enter Your Email'  name='email'  value={email} onChange={(e) => setEmail(e.target.value)} required/>
+              <input type='text' placeholder='Enter Your Email'  name='email'  value={email} onChange={(e) => setEmail(e.target.value)} required/>
               <label className='la'>Your Message</label>
               <textarea rows="8" placeholder="Message"   name="message"  value={message} onChange={(e) => setMessage(e.target.value)}> required</textarea>
               <button className='but2' type='submit'>Submit</button>
